@@ -3,37 +3,6 @@
 // Backend - orderController.js
 const Payment = require("../models/Payment");
 
-// exports.getShopOwnerOrders = async (req, res) => {
-//   try {
-//     if (req.userType !== "shopOwner") {
-//       return res.status(403).json({
-//         success: false,
-//         message: "Access denied. Only shop owners can view orders.",
-//       });
-//     }
-
-//     const shopOwnerId = req.user._id;
-//     console.log("Shop Owner ID:", shopOwnerId);
-
-//     const orders = await Payment.find({
-//       "cartItems.shopOwner.id": shopOwnerId,
-//     })
-//       .populate("user", "username email")
-//       .sort({ createdAt: -1 });
-
-//     console.log("Found Orders:", orders);
-
-//     res.json(orders);
-//   } catch (error) {
-//     console.error("Error in getShopOwnerOrders:", error);
-//     res.status(500).json({
-//       success: false,
-//       message: "Error fetching orders",
-//       error: error.message,
-//     });
-//   }
-// };
-////////////////////
 // Add this to orderController.js
 exports.getShopOwnerOrders = async (req, res) => {
   try {

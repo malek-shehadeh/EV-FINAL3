@@ -1,24 +1,3 @@
-// const express = require("express");
-// const upload = require("../middlewares/multerConfig");
-
-// const router = express.Router();
-
-// // Endpoint for image upload
-// router.post("/", upload.single("profileImage"), (req, res) => {
-//   try {
-//     if (!req.file) {
-//       return res.status(400).json({ message: "No file uploaded" });
-//     }
-//     res.status(200).json({
-//       message: "File uploaded successfully",
-//       filePath: `/uploads/${req.file.filename}`,
-//     });
-//   } catch (error) {
-//     res.status(500).json({ message: "Server error during file upload" });
-//   }
-// });
-
-// module.exports = router;
 /////////////////
 const express = require("express");
 const multer = require("multer");

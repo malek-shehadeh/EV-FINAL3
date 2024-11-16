@@ -1,29 +1,3 @@
-// const mongoose = require("mongoose");
-
-// const carCenterSchema = new mongoose.Schema(
-//   {
-//     name: { type: String, required: true },
-//     address: { type: String, required: true },
-//     location: {
-//       type: {
-//         type: String,
-//         enum: ["Point"],
-//         required: true,
-//       },
-//       coordinates: {
-//         type: [Number],
-//         required: true,
-//       },
-//     },
-//     phone: { type: String },
-//     website: { type: String },
-//   },
-//   { timestamps: true }
-// );
-
-// carCenterSchema.index({ location: "2dsphere" });
-
-// module.exports = mongoose.model("CarCenter", carCenterSchema);
 // ////////////////////////////////////////////////////////////////////////////////
 const mongoose = require("mongoose");
 

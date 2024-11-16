@@ -83,7 +83,7 @@ const ProductsPage = () => {
 
       <main className="max-w-7xl mx-auto py-6 px-4 lg:px-8">
         <motion.div
-          className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4 mb-8"
+          className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-2 mb-8 "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
@@ -94,18 +94,7 @@ const ProductsPage = () => {
             value={productStats.totalProducts.toString()}
             color="#6366F1"
           />
-          <StatCard
-            name="Top Selling"
-            icon={TrendingUp}
-            value={productStats.topSelling.toString()}
-            color="#10B981"
-          />
-          <StatCard
-            name="Low Stock"
-            icon={AlertTriangle}
-            value={productStats.lowStock.toString()}
-            color="#F59E0B"
-          />
+
           <StatCard
             name="Total Revenue"
             icon={DollarSign}

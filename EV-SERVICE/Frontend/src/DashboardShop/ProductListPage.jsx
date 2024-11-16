@@ -223,7 +223,7 @@ const ProductListPage = () => {
             Category: {product.category}
           </p>
           <p className="text-xs sm:text-sm text-green-700 mb-1">
-            Price: ${Number(product.price).toFixed(2)}
+            Price: {Number(product.price).toFixed(2)}JD
           </p>
           <p className="text-xs sm:text-sm text-green-600 mb-3 line-clamp-3">
             {product.description}
